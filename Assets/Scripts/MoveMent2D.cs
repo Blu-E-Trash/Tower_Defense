@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MoveMent2D : MonoBehaviour
+public class Movement2D : MonoBehaviour
 {
     [SerializeField]
     private float moveSpeed = 0.0f;
