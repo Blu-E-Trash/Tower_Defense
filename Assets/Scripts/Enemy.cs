@@ -9,7 +9,8 @@ public class Enemy : MonoBehaviour
     private int             currentIndex = 0;   //현재 목표지점 인덕스
     private Movement2D      movement2D;         //오브젝트 이동 제어
     private EnemySpawner    enemySpawner;       //적의 삭제를 본인이 하지 않고 EnemySpawner에 알려서 삭제
-
+    [SerializeField]
+    private int gold = 10;                      //사망시 획득 골드
     
     public void Setup(EnemySpawner enemySpawner,Transform[] wayPoints)
     {
@@ -65,6 +66,7 @@ public class Enemy : MonoBehaviour
         //현재 위치가 마지막 waypoint면
         else
         {
+            gold = 0;
             //적 오브젝트 삭제
             //Destroy(gameObject);
             OnDie(EnemyDestroyType.Arrive);
@@ -75,6 +77,6 @@ public class Enemy : MonoBehaviour
     {
         //에너미 스포너에서 리스트로 적 정보를 관리하기에 Destroy()를 직접 하지 않고
         //에너미 스포너에게 본인이 삭제될 때 필요한 처리를 하도록 DestroyEnemy() 함수 호출
-        enemySpawner.DestroyEnemy(type,this);
+        enemySpawner.DestroyEnemy(type,this,gold);
     }
 }

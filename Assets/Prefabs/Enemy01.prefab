@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151e29027148df54f8ecf9029cdc8a65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gold: 10
 --- !u!114 &2682316467059341374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3dc95bf2b5c8ea44b40cda5dd866d5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 1
   moveDirection: {x: 0, y: 0, z: 0}
 --- !u!114 &7275508016813989039
 MonoBehaviour:
@@ -126,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c648b0d032ee2cf4f8bf1f8f1bbc8ea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 5
+  maxHP: 2
 --- !u!58 &1723815928982735226
 CircleCollider2D:
   m_ObjectHideFlags: 0
