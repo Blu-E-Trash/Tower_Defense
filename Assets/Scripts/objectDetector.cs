@@ -4,6 +4,8 @@ public class objectDetector : MonoBehaviour
 {
     [SerializeField]
     private Tower_Spawner towerSpawner;
+    [SerializeField]
+    private TowerDataViewer towerDataViewer;
 
     private Camera mainCamera;
     private Ray ray;
@@ -35,6 +37,10 @@ public class objectDetector : MonoBehaviour
                 {
                     //타워를 생성하는 SpawnTower() 호출
                     towerSpawner.SpawnTower(hit.transform);
+                }
+                else if (hit.transform.CompareTag("Tower"))
+                {
+                    towerDataViewer.OnPanel();
                 }
             }
         }
