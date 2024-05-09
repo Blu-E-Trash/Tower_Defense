@@ -34,7 +34,7 @@ public class EnemyHp : MonoBehaviour
         StartCoroutine("HitAlphaAnimation");
 
         //피가 0 이하 = 적 사망
-        if(currentHP < 0)
+        if(currentHP <= 0)
         {
             isDie = true;
             //적 사망
