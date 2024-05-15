@@ -10,6 +10,8 @@ public class PlayerHp : MonoBehaviour
     [SerializeField]
     private float maxHP = 20;
     private float currentHp;
+    
+    
 
     public float MaxHP => maxHP;
     public float CurrentHp => currentHp;
@@ -17,10 +19,12 @@ public class PlayerHp : MonoBehaviour
     private void Awake()
     {
         currentHp = maxHP;
+        
     }
 
     public void TakeDamage(float damage)
     {
+        
         currentHp -= damage;
 
         StopCoroutine("HitAlphaAnimation");
@@ -41,7 +45,7 @@ public class PlayerHp : MonoBehaviour
         //투명도가 0%가 될때까지 감소
         while(color.a >= 0.0f)
         {
-            color.a -= Time.deltaTime;
+            color.a -= 0.1f*Time.deltaTime;
             imageScreen.color = color;
 
             yield return null;

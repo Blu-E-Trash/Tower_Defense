@@ -21,6 +21,7 @@ public class EnemySpawner : MonoBehaviour
     private Wave currentWave;//현재 웨이브 정보
     private int currentEnemyCount; //현재 웨이브에 남아있는 적 숫자(시작시 max, 사망시 -1)
     private List<Enemy>     enemyList;  //현재 맵에 존재하는 모든 적의 정보
+    
 
     //적의 생성과 삭제는 EnemySpawner에서 하기 때문에 Set은 필요 없음
     public List<Enemy> EnemyList => enemyList;
@@ -85,6 +86,7 @@ public class EnemySpawner : MonoBehaviour
         enemyList.Remove(enemy);
         //적 오브젝트 삭제
         Destroy(enemy.gameObject);
+        
     }
 
     private void SpawnEnemyHPSlider(GameObject enemy)

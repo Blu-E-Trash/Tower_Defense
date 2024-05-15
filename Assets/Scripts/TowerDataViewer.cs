@@ -23,6 +23,7 @@ public class TowerDataViewer : MonoBehaviour
     private Button buttonUpgrade;
     [SerializeField]
     private SystemTextViewer systemTextViewer;
+    private PlayerHp playerHp;
 
     private TowerWeapon currentTower;
     private void Awake()
