@@ -294,7 +294,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: $50
+  m_text: $200
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4720,7 +4720,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7a7c7115c9627634dbba8b3b17218a7f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 956e42dc4ae6ee646813473bad0177a7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8078,7 +8078,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2308f94732de961468f865b153b890f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerTemplate: {fileID: 11400000, guid: b4ebaa78c8c3a214e88cebf4115dd081, type: 2}
+  towerTemplate:
+  - {fileID: 11400000, guid: b4ebaa78c8c3a214e88cebf4115dd081, type: 2}
+  - {fileID: 11400000, guid: 55bb784a7c1f26c46b9813719e22f2d7, type: 2}
   enemySpawner: {fileID: 700545412}
   playerGold: {fileID: 1878224693}
   systemTextViewer: {fileID: 1489230004}
@@ -11249,7 +11251,7 @@ GameObject:
   - component: {fileID: 1478396613}
   - component: {fileID: 1478396612}
   m_Layer: 5
-  m_Name: ButtonTower01Canon (1)
+  m_Name: ButtonTower02Laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11323,11 +11325,11 @@ MonoBehaviour:
       - m_Target: {fileID: 967521593}
         m_TargetAssemblyTypeName: Tower_Spawner, Assembly-CSharp
         m_MethodName: ReadyToSpawnTower
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -13496,7 +13498,7 @@ MonoBehaviour:
       - m_Target: {fileID: 967521593}
         m_TargetAssemblyTypeName: Tower_Spawner, Assembly-CSharp
         m_MethodName: ReadyToSpawnTower
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
